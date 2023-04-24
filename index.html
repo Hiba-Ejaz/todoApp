@@ -7,6 +7,15 @@
     <title>TODO APP</title>
 </head>
 <body>
-    
+    <form  class="mainform" action="submit.php" method="post">
+        <input class="mainform__text" type="text" placeholder="type your task here">
+        <input class="mainform__date" type="date" id="date" name="date">
+        <select class="mainform__status" id="myList" name="myList">
+        <option class="mainform__status__notStarted" value="not started" selected>NOT STARTED</option>
+        <option class="mainform__status__inProgress" value="in progress">IN PROGRESS</option>
+        <option class="mainform__status__complete" value="complete">COMPLETE</option>
+        </select>
+        <button class="mainform__submit-btn" type="submit">Submit</button>
+    </form>
 </body>
 </html>
