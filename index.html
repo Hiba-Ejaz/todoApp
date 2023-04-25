@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>TODO APP</title>
 </head>
 <body>
-    <form  class="mainform" action="submit.php" method="post">
+    <h1 class="main-header">TO-DO APP</h1>
+    <button class="addNewItemBtn">ADD NEW ITEM</button>
+    <button class="cancelNewItemBtn">CANCEL ITEM</button>
+    <form  class="mainform" id="mainform" action="" method="">
         <input class="mainform__text" type="text" placeholder="type your task here">
+        <span id="mainform__errorMessage"></span>
         <input class="mainform__date" type="date" id="date" name="date">
         <select class="mainform__status" id="myList" name="myList">
         <option class="mainform__status__notStarted" value="not started" selected>NOT STARTED</option>
@@ -17,5 +22,15 @@
         </select>
         <button class="mainform__submit-btn" type="submit">Submit</button>
     </form>
+    <table id="table">
+        <tr class="table__row1">
+            <th class="table__row1__col1">TITLE</th>
+            <th class="table__row1__col2">DEADLINE</th>
+            <th class="table__row1__col2">STATUS</th>
+        </tr>
+
+    </table>
+    <script src="./index.js" type="module"></script>
 </body>
+
 </html>

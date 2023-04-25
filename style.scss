@@ -1,0 +1,135 @@
+
+$main-font: 'Helvetica Neue', sans-serif;
+$main-color: #333;
+
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-style {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #ddd;
+  }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $main-font;
+  color: $main-color;
+}
+
+body {
+  margin: auto;
+}
+
+// Header
+.main-header {
+  text-align: center;
+  font-size: 32px;
+  margin: 40px 0;
+  color: #ddd;
+}
+
+// Buttons
+.addNewItemBtn,
+.cancelNewItemBtn {
+  @include button-style;
+  background-color: #4CAF50;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.cancelNewItemBtn {
+  background-color: #f44336;
+}
+
+// Form
+.mainform {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 10rem 0;
+
+  &__text {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+  &__date {
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+  &__status {
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+  &__submit-btn {
+    @include button-style;
+    background-color: #2196F3;
+    color: #fff;
+    margin-top: 10px;
+    flex: 0 0 100%;
+  }
+
+  &__errorMessage {
+    color: red;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+}
+
+// Table
+#table {
+  width: 100%;
+  border-collapse: collapse;
+  border: #ddd solid 3px;
+
+  &__row1 {
+    background-color: #ddd;
+    font-weight: bold;
+
+    &__col1,
+    &__col2 {
+      padding: 10px;
+      text-align: left;
+    }
+
+    &__col2 {
+      width: 20%;
+    }
+  }
+
+  &__row2 {
+    &__col1,
+    &__col2 {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    &__col2 {
+      width: 20%;
+      text-align: center;
+    }
+
+    &:hover {
+      background-color: #f2f2f2;
+    }
+  }
+}
