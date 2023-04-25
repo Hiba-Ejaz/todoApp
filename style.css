@@ -81,16 +81,29 @@ body {
 
 #table {
   width: 100%;
+  position: relative;
+  bottom: 1rem;
+  top: 4rem;
   border-collapse: collapse;
-  border: #ddd solid 3px;
+  border: black solid 3px;
+  padding: 1rem;
+}
+#table tr {
+  border: #333;
+  margin: 1rem;
+  padding: 1rem;
+}
+#table th {
+  text-align: left;
 }
 #table__row1 {
   background-color: #ddd;
   font-weight: bold;
 }
 #table__row1__col1, #table__row1__col2 {
-  padding: 10px;
-  text-align: left;
+  padding: 2rem;
+  margin: 2rem;
+  text-align: center;
 }
 #table__row1__col2 {
   width: 20%;
@@ -101,7 +114,7 @@ body {
 }
 #table__row2__col2 {
   width: 20%;
-  text-align: center;
+  text-align: left;
 }
 #table__row2:hover {
   background-color: #f2f2f2;

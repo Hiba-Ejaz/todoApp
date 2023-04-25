@@ -98,17 +98,30 @@ body {
 // Table
 #table {
   width: 100%;
+  position: relative;
+  bottom: 1rem;
+  top:4rem;
   border-collapse: collapse;
-  border: #ddd solid 3px;
-
+  border: black solid 3px;
+  padding: 1rem;
+tr{
+  border: #333;
+  margin: 1rem;
+  padding: 1rem;
+}
+th{
+  text-align: left;
+  
+}
   &__row1 {
     background-color: #ddd;
     font-weight: bold;
 
     &__col1,
     &__col2 {
-      padding: 10px;
-      text-align: left;
+      padding: 2rem;
+      margin: 2rem;
+      text-align: center;
     }
 
     &__col2 {
@@ -125,7 +138,7 @@ body {
 
     &__col2 {
       width: 20%;
-      text-align: center;
+      text-align: left;
     }
 
     &:hover {
