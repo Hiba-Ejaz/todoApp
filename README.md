@@ -1,10 +1,10 @@
 # To-do list
 
-# Responsive design
+
 
 Refer to this [link](https://644723eddcc17049066f469a--sweet-mooncake-7255cb.netlify.app/) to view my assignment
 
-## Requirements
+## Functionality
  an HTML file with a form and a table that will display the list of tasks. Each row in the table will represent a to do task and will contain input fields for the title, deadline, and status of the task.
 
 a function in JavaScript validates the user's input for the title. The function  checks that the title is not empty and that it does not already exist in the table. If the title is not unique or empty, entire item should not be added to the table.
